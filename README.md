@@ -53,7 +53,7 @@ Adaptation to non-stationary problem of different algorithm is a paramount requi
 Furthermore, two different initiation steps carried out in order to analyze results. This will let the reader a better understanding of the performance of algorithm.
 
 	Same starting mean for all the episodes (Randomly generated mean with seed=100)
-	Same mean for each bandit different value for each episode (randomly generated i where 1=2=3=4……..=10)
+	Same mean for each bandit different value for each episode (randomly generated ui where u1=u2=u3=u4……..=u10)
  
 
 Analysis of part 2 can be accessed with Assignment1.2.ipynb file. Similarly part 2 can be use to recreate part 1 as well selecting aprpriate parameters in the section.
