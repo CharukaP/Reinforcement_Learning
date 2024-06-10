@@ -1,7 +1,6 @@
 **Part 1**
 
-Libraries used
-In this exercise I have used two python libraries coding purposes.
+Libraries used in this exercise
 
 	Numpy
 	Matplotlib
