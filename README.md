@@ -27,11 +27,11 @@ We are exploring three different changes to our mean parameters in order to mimi
 	Abrupt change
  
 First change we can introduce is drift change here we consider drift in mean values with each step of the actions. Change in mean value is defined as below formula and according to that drift_change function is added to the code.
-μ_t=μ_(t-1)+ ϵ_t  | ϵ_t  ∈N(0,〖0.001〗^2)
+μ_t = μ_(t-1) + ϵ_t  | ϵ_t ∈ N(0,(0.001)^2)
 
 Second changing behavior is reverting change here we consider slightly bigger change in mean values than first instance. Change in mean is explained well in below formula. Similarly reverting_change function is introduced for the code to accommodate change
 
-μ_t=〖K μ〗_(t-1)+ ϵ_t  | ϵ_t  ∈N(0,〖0.001〗^2 ),K=0.5
+μ_t = K * μ_(t-1) + ϵ_t  | ϵ_t ∈ N(0,(0.001)^2 ), K=0.5
 
 The last change was abrupt change. Here we permute the element in mean values of k-arms with probability of 0.005. Although its small number change in value have a huge impact on reward collection.
 
