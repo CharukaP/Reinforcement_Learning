@@ -27,6 +27,7 @@ We are exploring three different changes to our mean parameters in order to mimi
 	Abrupt change
  
 First change we can introduce is drift change here we consider drift in mean values with each step of the actions. Change in mean value is defined as below formula and according to that drift_change function is added to the code.
+
 μ_t = μ_(t-1) + ϵ_t  | ϵ_t ∈ N(0,(0.001)^2)
 
 Second changing behavior is reverting change here we consider slightly bigger change in mean values than first instance. Change in mean is explained well in below formula. Similarly reverting_change function is introduced for the code to accommodate change
@@ -52,8 +53,8 @@ Adaptation to non-stationary problem of different algorithm is a paramount requi
 
 Furthermore, two different initiation steps carried out in order to analyze results. This will let the reader a better understanding of the performance of algorithm.
 
-	Same starting mean for all the episodes (Randomly generated mean with seed=100)
-	Same mean for each bandit different value for each episode (randomly generated ui where u1=u2=u3=u4……..=u10)
+	Same starting mean for all the episodes (Randomly generated mean with seed=100 with different mean value for each bandit)
+	Same mean for each bandit different value for each episode (randomly generated ui for each episode where u1=u2=u3=u4……..=u10)
  
 
 Analysis of part 2 can be accessed with Assignment1.2.ipynb file. Similarly part 2 can be use to recreate part 1 as well selecting aprpriate parameters in the section.
